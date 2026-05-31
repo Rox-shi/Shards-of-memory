@@ -1,0 +1,129 @@
+[gd_scene format=3 uid="uid://nxk70afxquui"]
+
+[ext_resource type="Script" uid="uid://beink7slb57c6" path="res://choice_level.gd" id="1_3w8un"]
+[ext_resource type="PackedScene" uid="uid://dwlfjq3kamxpn" path="res://parallax_background.tscn" id="1_yb8dd"]
+[ext_resource type="FontFile" uid="uid://o2ym2fth8plm" path="res://Fronts/04brusbylyajka_30.otf" id="2_3w8un"]
+
+[node name="choice level" type="Control" unique_id=621718513]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3w8un")
+
+[node name="BG" parent="." unique_id=880192166 instance=ExtResource("1_yb8dd")]
+
+[node name="choice" type="Label" parent="." unique_id=394579727]
+layout_mode = 0
+offset_left = 265.0
+offset_top = 46.0
+offset_right = 885.0
+offset_bottom = 115.0
+theme_override_colors/font_color = Color(0.9265534, 0.35097244, 0.38509881, 1)
+theme_override_fonts/font = ExtResource("2_3w8un")
+theme_override_font_sizes/font_size = 40
+text = "ВЫБЕРИТЕ УРОВЕНЬ"
+
+[node name="Label2" type="Label" parent="." unique_id=76459570]
+layout_mode = 0
+offset_left = 122.0
+offset_top = 122.0
+offset_right = 513.0
+offset_bottom = 207.0
+theme_override_colors/font_color = Color(0.9265534, 0.35097244, 0.38509881, 1)
+theme_override_fonts/font = ExtResource("2_3w8un")
+theme_override_font_sizes/font_size = 28
+text = "     Легко
+(сбор фрагментов)"
+
+[node name="Label3" type="Label" parent="." unique_id=1688477419]
+layout_mode = 0
+offset_left = 566.0
+offset_top = 122.0
+offset_right = 1130.0
+offset_bottom = 216.0
+theme_override_colors/font_color = Color(0.9265534, 0.35097244, 0.38509881, 1)
+theme_override_fonts/font = ExtResource("2_3w8un")
+theme_override_font_sizes/font_size = 28
+text = "        Сложно
+(сбор фрагментов + мобы)"
+
+[node name="Level1" type="Button" parent="." unique_id=1595757516]
+layout_mode = 0
+offset_left = 233.0
+offset_top = 256.0
+offset_right = 344.0
+offset_bottom = 367.0
+theme_override_fonts/font = ExtResource("2_3w8un")
+theme_override_font_sizes/font_size = 50
+text = "1"
+
+[node name="Level2" type="Button" parent="." unique_id=1427007205]
+layout_mode = 0
+offset_left = 158.0
+offset_top = 384.0
+offset_right = 265.0
+offset_bottom = 490.0
+theme_override_fonts/font = ExtResource("2_3w8un")
+theme_override_font_sizes/font_size = 50
+text = "2"
+
+[node name="Level3" type="Button" parent="." unique_id=1530789370]
+layout_mode = 0
+offset_left = 312.0
+offset_top = 384.0
+offset_right = 420.0
+offset_bottom = 493.0
+theme_override_fonts/font = ExtResource("2_3w8un")
+theme_override_font_sizes/font_size = 50
+text = "3"
+
+[node name="Level1_1" type="Button" parent="." unique_id=710126694]
+layout_mode = 0
+offset_left = 766.0
+offset_top = 259.0
+offset_right = 875.0
+offset_bottom = 365.0
+theme_override_fonts/font = ExtResource("2_3w8un")
+theme_override_font_sizes/font_size = 50
+text = "1"
+
+[node name="Level2_1" type="Button" parent="." unique_id=271484092]
+layout_mode = 0
+offset_left = 695.0
+offset_top = 384.0
+offset_right = 803.0
+offset_bottom = 493.0
+theme_override_fonts/font = ExtResource("2_3w8un")
+theme_override_font_sizes/font_size = 50
+text = "2"
+
+[node name="Level3_1" type="Button" parent="." unique_id=1133465982]
+layout_mode = 0
+offset_left = 849.0
+offset_top = 386.0
+offset_right = 956.0
+offset_bottom = 493.0
+theme_override_fonts/font = ExtResource("2_3w8un")
+theme_override_font_sizes/font_size = 50
+text = "3"
+
+[node name="Back" type="Button" parent="." unique_id=61902719]
+layout_mode = 0
+offset_left = 366.0
+offset_top = 546.0
+offset_right = 744.0
+offset_bottom = 607.0
+theme_override_fonts/font = ExtResource("2_3w8un")
+theme_override_font_sizes/font_size = 28
+text = "Вернуться назад"
+
+[connection signal="pressed" from="Level1" to="." method="_on_level_1_pressed"]
+[connection signal="pressed" from="Level2" to="." method="_on_level_2_pressed"]
+[connection signal="pressed" from="Level3" to="." method="_on_level_3_pressed"]
+[connection signal="pressed" from="Level1_1" to="." method="_on_level_1_1_pressed"]
+[connection signal="pressed" from="Level2_1" to="." method="_on_level_2_1_pressed"]
+[connection signal="pressed" from="Level3_1" to="." method="_on_level_3_1_pressed"]
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]

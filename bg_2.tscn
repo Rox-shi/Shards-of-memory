@@ -1,0 +1,73 @@
+[gd_scene format=3 uid="uid://c00vi78odkd6j"]
+
+[ext_resource type="Texture2D" uid="uid://d2015ixf8fiwo" path="res://Pixel Art Tiles and Backgrounds - Woods/Backgrounds/BACKGROUND.png" id="1_tckpe"]
+[ext_resource type="Texture2D" uid="uid://gdd31q0a3o12" path="res://Pixel Art Tiles and Backgrounds - Woods/Backgrounds/BUSH - BACKGROUND.png" id="2_rqkew"]
+[ext_resource type="Texture2D" uid="uid://om63d1gvosyh" path="res://Pixel Art Tiles and Backgrounds - Woods/Backgrounds/VINES - Second.png" id="3_4utd8"]
+[ext_resource type="Texture2D" uid="uid://5p0qix3h6x87" path="res://Pixel Art Tiles and Backgrounds - Woods/Backgrounds/WOODS - Fourth.png" id="4_q27fm"]
+[ext_resource type="Texture2D" uid="uid://tkwgiogophuf" path="res://Pixel Art Tiles and Backgrounds - Woods/Backgrounds/WOODS - Third.png" id="5_arlxs"]
+[ext_resource type="Texture2D" uid="uid://bwlcyusyxxvj6" path="res://Pixel Art Tiles and Backgrounds - Woods/Backgrounds/WOODS - Second.png" id="6_ty3ts"]
+[ext_resource type="Texture2D" uid="uid://du1532jxnxu4i" path="res://Pixel Art Tiles and Backgrounds - Woods/Backgrounds/WOODS - First.png" id="7_gmne2"]
+
+[node name="BG2" type="ParallaxBackground" unique_id=1437137518]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="." unique_id=663001466]
+motion_scale = Vector2(0.2, 1)
+motion_mirroring = Vector2(1150, 0)
+
+[node name="1" type="Sprite2D" parent="ParallaxLayer" unique_id=54087823]
+position = Vector2(576.00006, 321.00003)
+scale = Vector2(2.2500002, 2.2500002)
+texture = ExtResource("1_tckpe")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="." unique_id=890373085]
+motion_scale = Vector2(0.4, 1)
+motion_mirroring = Vector2(1150, 0)
+
+[node name="2" type="Sprite2D" parent="ParallaxLayer2" unique_id=1462596622]
+position = Vector2(576, 327.75003)
+scale = Vector2(2.2517364, 2.2517364)
+texture = ExtResource("2_rqkew")
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="." unique_id=1654365153]
+motion_scale = Vector2(0.6, 1)
+motion_mirroring = Vector2(1150, 0)
+
+[node name="3" type="Sprite2D" parent="ParallaxLayer3" unique_id=783150195]
+position = Vector2(574.3334, 324)
+scale = Vector2(2.2430558, 2.2430558)
+texture = ExtResource("3_4utd8")
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="." unique_id=2017216996]
+motion_scale = Vector2(0.8, 1)
+motion_mirroring = Vector2(1150, 0)
+
+[node name="4" type="Sprite2D" parent="ParallaxLayer4" unique_id=642757822]
+position = Vector2(574.5, 323.25)
+scale = Vector2(2.2480469, 2.248264)
+texture = ExtResource("4_q27fm")
+
+[node name="ParallaxLayer5" type="ParallaxLayer" parent="." unique_id=1633757759]
+motion_scale = Vector2(0.9, 1)
+motion_mirroring = Vector2(1150, 0)
+
+[node name="5" type="Sprite2D" parent="ParallaxLayer5" unique_id=712871456]
+position = Vector2(577.8889, 325.99997)
+scale = Vector2(2.2430558, 2.2430558)
+texture = ExtResource("5_arlxs")
+
+[node name="ParallaxLayer6" type="ParallaxLayer" parent="." unique_id=378729831]
+motion_mirroring = Vector2(1150, 0)
+
+[node name="6" type="Sprite2D" parent="ParallaxLayer6" unique_id=1475073347]
+position = Vector2(575.55554, 323)
+scale = Vector2(2.25, 2.25)
+texture = ExtResource("6_ty3ts")
+
+[node name="ParallaxLayer7" type="ParallaxLayer" parent="." unique_id=1018697216]
+motion_scale = Vector2(1.1, 1)
+motion_mirroring = Vector2(1150, 0)
+
+[node name="7" type="Sprite2D" parent="ParallaxLayer7" unique_id=94419725]
+position = Vector2(576, 324.49997)
+scale = Vector2(2.253906, 2.2604165)
+texture = ExtResource("7_gmne2")

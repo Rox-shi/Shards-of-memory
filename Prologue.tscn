@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://bxax1v126coe6"]
+
+[ext_resource type="Texture2D" uid="uid://cl20ayib3ppk2" path="res://Dynamic_Space_Background_FREE/Nebula Blue.png" id="1_7kdyy"]
+[ext_resource type="Script" uid="uid://cn7fbvrhitfy" path="res://Prologue.gd" id="1_ojrw6"]
+[ext_resource type="Texture2D" uid="uid://cmjd87u8k5u4n" path="res://Dynamic_Space_Background_FREE/Stars Small_2.png" id="2_ojrw6"]
+[ext_resource type="Texture2D" uid="uid://d1va5rijclkuu" path="res://Dynamic_Space_Background_FREE/Stars-Big_1_1_PC.png" id="3_o0pgn"]
+[ext_resource type="FontFile" uid="uid://o2ym2fth8plm" path="res://Fronts/04brusbylyajka_30.otf" id="5_o0pgn"]
+
+[node name="Prologue" type="Control" unique_id=958729592]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ojrw6")
+
+[node name="NebulaBlue" type="Sprite2D" parent="." unique_id=1940625205]
+position = Vector2(627.00006, 343.99997)
+scale = Vector2(0.3580322, 0.17614746)
+texture = ExtResource("1_7kdyy")
+
+[node name="StarsSmall2" type="Sprite2D" parent="." unique_id=340316321]
+position = Vector2(614, 341.5)
+scale = Vector2(0.35839847, 0.173584)
+texture = ExtResource("2_ojrw6")
+
+[node name="StarsBig11Pc" type="Sprite2D" parent="." unique_id=133873135]
+position = Vector2(612.5, 340.5)
+scale = Vector2(0.3605957, 0.17602539)
+texture = ExtResource("3_o0pgn")
+
+[node name="TextLabel" type="Label" parent="." unique_id=631821983]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 163.0
+offset_right = 1090.0
+offset_bottom = 434.0
+theme_override_colors/font_color = Color(0.9254902, 0.34901962, 0.38431373, 1)
+theme_override_fonts/font = ExtResource("5_o0pgn")
+theme_override_font_sizes/font_size = 20
+
+[node name="AnyKeyLabel" type="Label" parent="." unique_id=1642214209]
+visible = false
+layout_mode = 0
+offset_left = 255.0
+offset_top = 566.0
+offset_right = 928.0
+offset_bottom = 620.0
+theme_override_colors/font_color = Color(0.9254902, 0.34901962, 0.38431373, 1)
+theme_override_fonts/font = ExtResource("5_o0pgn")
+theme_override_font_sizes/font_size = 20
+text = "Нажмите любую кнопку, чтобы продолжить"

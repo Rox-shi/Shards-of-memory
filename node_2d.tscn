@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://lbqo706gxd5c"]
+
+[ext_resource type="Script" uid="uid://bnukr0hkr2fyq" path="res://node_2d.gd" id="1_wtcfe"]
+[ext_resource type="PackedScene" uid="uid://dwlfjq3kamxpn" path="res://parallax_background.tscn" id="2_0e48y"]
+[ext_resource type="FontFile" uid="uid://o2ym2fth8plm" path="res://Fronts/04brusbylyajka_30.otf" id="2_epypp"]
+
+[node name="Menu" type="Control" unique_id=1985554945]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_wtcfe")
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="." unique_id=468109014]
+layout_mode = 0
+offset_left = 205.0
+offset_top = 140.0
+offset_right = 897.39996
+offset_bottom = 284.0
+theme_override_colors/font_color = Color(0.8429899, 0.2658544, 0.3896822, 1)
+theme_override_fonts/font = ExtResource("2_epypp")
+theme_override_font_sizes/font_size = 75
+text = "INNER GLOW"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="." unique_id=1450312118]
+layout_mode = 0
+offset_left = 289.0
+offset_top = 357.0
+offset_right = 525.0
+offset_bottom = 450.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_epypp")
+theme_override_font_sizes/font_size = 40
+text = "Играть"
+
+[node name="Button2" type="Button" parent="." unique_id=430762250]
+layout_mode = 0
+offset_left = 590.0
+offset_top = 358.0
+offset_right = 830.0
+offset_bottom = 451.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_epypp")
+theme_override_font_sizes/font_size = 40
+text = "Выход"
+
+[node name="BG" parent="." unique_id=880192166 instance=ExtResource("2_0e48y")]
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

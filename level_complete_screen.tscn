@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://5oxlflvs7i0y"]
+
+[ext_resource type="PackedScene" uid="uid://dwlfjq3kamxpn" path="res://parallax_background.tscn" id="1_08yip"]
+[ext_resource type="Script" uid="uid://daf7l4fs442qr" path="res://level_complete_screen.gd" id="1_q7nv3"]
+[ext_resource type="FontFile" uid="uid://o2ym2fth8plm" path="res://Fronts/04brusbylyajka_30.otf" id="2_oq2ma"]
+[ext_resource type="PackedScene" uid="uid://bwbanpw6h3oyv" path="res://Coins/hurts.tscn" id="3_q7nv3"]
+
+[node name="LevelCompleteScreen" type="Control" unique_id=1595249681]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_q7nv3")
+
+[node name="BG" parent="." unique_id=880192166 instance=ExtResource("1_08yip")]
+
+[node name="Label" type="Label" parent="." unique_id=1565042183]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 104.0
+offset_right = 1108.0
+offset_bottom = 267.0
+theme_override_colors/font_color = Color(0.8429899, 0.2658544, 0.3896822, 1)
+theme_override_fonts/font = ExtResource("2_oq2ma")
+theme_override_font_sizes/font_size = 56
+text = "УРОВЕНЬ ПРОЙДЕН!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="back_level" type="Button" parent="." unique_id=1876732978]
+layout_mode = 0
+offset_left = 117.0
+offset_top = 309.0
+offset_right = 524.0
+offset_bottom = 408.0
+theme_override_fonts/font = ExtResource("2_oq2ma")
+theme_override_font_sizes/font_size = 38
+text = "Выбор уровня"
+
+[node name="back_menu" type="Button" parent="." unique_id=63606675]
+layout_mode = 0
+offset_left = 607.0
+offset_top = 311.0
+offset_right = 1014.0
+offset_bottom = 410.0
+theme_override_fonts/font = ExtResource("2_oq2ma")
+theme_override_font_sizes/font_size = 30
+text = "Вернуться в меню"
+
+[node name="Hearts1" parent="." unique_id=1130752049 instance=ExtResource("3_q7nv3")]
+position = Vector2(951, 199)
+
+[connection signal="pressed" from="back_level" to="." method="_on_back_level_pressed"]
+[connection signal="pressed" from="back_menu" to="." method="_on_back_menu_pressed"]
